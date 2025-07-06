@@ -1,0 +1,43 @@
+# ── python artefacts ─────────────────
+__pycache__/
+*.py[cod]
+*.pkl
+*.parquet
+*.sqlite
+*.log
+.env
+ws.json
+
+# ── runtime data / models ───────────
+datasets/
+labels/
+logs/
+models/
+
+# ── IDE / OS junk ───────────────────
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ── capt ured market data ───────────────
+*.csv
+feeds/
+pnl/
+nifty_fut_ticks_*.csv
+option_chain_*.csv
+
+# ── notebooks / experiments ────────────
+*.ipynb
+.ipynb_checkpoints/
+
+# ── build artefacts ---------------------
+*.parquet
+*.feather
+*.p   # joblib / pickle
+*.h5
+*.onnx
+*.model
+
+# ── shell helpers -----------------------
+*.sh~
+test.py
