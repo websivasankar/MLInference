@@ -1,12 +1,7 @@
 Real-Time ML Trading Pipeline
-Technical Product Management Portfolio
-🎯 Project Overview
-Real-time algorithmic trading system processing 4,000+ predictions/day with 65-75% directional accuracy
 
 Technical Stack: Python, PostgreSQL, LightGBM, WebSocket APIs
 Scale: 2-3 ticks/sec → 5-second predictions, 15-minute ML windows
-Performance: <200ms latency, 99.9% uptime, institutional-grade reliability
-
 
 🏗️ System Architecture
 Market Data (WebSocket) → Real-Time Ingestion → Feature Engineering (180-tick windows) 
@@ -19,7 +14,6 @@ Key Technical Decisions & Trade-offs
 5-second batching: Balances real-time needs vs database performance
 180-tick windows: Optimal for 15-minute market context without overfitting
 Dual timeframe models: 15min + 30min for different market regimes
-Conservative bias: 50-60% FLAT predictions to minimize false positives
 
 
 🚀 Demo Components
